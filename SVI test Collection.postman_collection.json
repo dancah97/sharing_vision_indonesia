@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "46571cd9-4ea3-42e8-ab14-d269dff7a545",
+		"name": "SVI test Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10750904"
+	},
+	"item": [
+		{
+			"name": "Create Posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "The Importance of Web Security in Modern Applications",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "In today's digital age, web security is a crucial aspect of application development. Cyber threats such as SQL injection, cross-site scripting, and data breaches can compromise sensitive user information. Implementing security measures like HTTPS, authentication, and data encryption helps protect applications from potential attacks. Developers must stay updated on security trends to safeguard their systems effectively. Ensuring regular updates and security audits is vital to maintaining a secure online presence. Security should never be an afterthought, but rather a fundamental part of web development from the initial stages.",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "q",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Publish",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/article",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get data with limit",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/article/10/0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article",
+						"10",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get data by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/article/4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "The Importance of Web Security in Modern Applications",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "In today's digital age, web security is a crucial aspect of application development. Cyber threats such as SQL injection, cross-site scripting, and data breaches can compromise sensitive user information. Implementing security measures like HTTPS, authentication, and data encryption helps protect applications from potential attacks. Developers must stay updated on security trends to safeguard their systems effectively. Ensuring regular updates and security audits is vital to maintaining a secure online presence. Security should never be an afterthought, but rather a fundamental part of web development from the initial stages.",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Jiahahaaa",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Publish",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/article/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "The Importance of Web Security in Modern Applications",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "In today's digital age, web security is a crucial aspect of application development. Cyber threats such as SQL injection, cross-site scripting, and data breaches can compromise sensitive user information. Implementing security measures like HTTPS, authentication, and data encryption helps protect applications from potential attacks. Developers must stay updated on security trends to safeguard their systems effectively. Ensuring regular updates and security audits is vital to maintaining a secure online presence. Security should never be an afterthought, but rather a fundamental part of web development from the initial stages.",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Jiahahaaa",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Publish",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/article/43",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article",
+						"43"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
